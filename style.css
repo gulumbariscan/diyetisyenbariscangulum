@@ -4,18 +4,21 @@
 .quicksand{
     font-family: 'Quicksand', sans-serif;
 }
+.courgette{
+  font-family: 'Courgette', cursive;
+}
 nav{
   -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
 }
-.nav-social{
+nav.scrollUp {
+  transform: translateY(-100px);
+}
+.navSocial{
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
-}
-.bg-first-section{
-    background-image: url('./background.jpg')
 }
 .facebook{
     background-color: #3b5998;
@@ -29,20 +32,17 @@ nav{
 .linkedin{
     background-color: #0077b5;
 }
-.divider {
-    background-image: url('./divider.png');
-    height: 20px;
+.bgFirstSection{
+  background-image: url('./img/background.jpg')
 }
-.company{
-    background-image: url('./company.jpg')
-}
-.home-base{
+.homeBase{
     background:linear-gradient(60deg, #000000 50%, transparent 50.1%) left no-repeat;
 }
-.courgette{
-    font-family: 'Courgette', cursive;
+.divider {
+  background-image: url('./img/divider.png');
+  height: 20px;
 }
-.brown-bg{
+.brownBg{
     background-color: #695E63;
 }
 .textServices{
@@ -166,16 +166,11 @@ figure img{
 
 /*nav link underline*/
 
-.hvr-underline-from-left {
-    display: inline-block;
-    vertical-align: middle;
+.underlineFromLeft {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
   }
-  .hvr-underline-from-left:before {
+  .underlineFromLeft:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -191,7 +186,7 @@ figure img{
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  .underlineFromLeft:hover:before, .underlineFromLeft:focus:before, .underlineFromLeft:active:before {
     right: 0;
   }
 .home-base-mobile {
@@ -268,21 +263,22 @@ figure img{
   
 
 
-nav.scrollUp {
-    transform: translateY(-100px);
+
+  .company{
+    background-image: url('./img/company.jpg')
   }
   
 @media (max-width: 1023.9px) {
     nav{
         background-image: linear-gradient(90deg, #FFDEE9 0%, #B5FFFC 100%);
     }
-    .bg-first-section{
-    background-image: url('./backgroundM.jpg')
+    .bgFirstSection{
+    background-image: url('./img/backgroundM.jpg')
     }
-    .home-base{
+    .homeBase{
         background:#000000;
     }
-    .brown-bg{
+    .brownBg{
         background-color: #f7fafc;
     }
     .mobile-personal-icon{
