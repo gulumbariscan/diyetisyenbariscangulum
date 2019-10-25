@@ -281,20 +281,26 @@ figure img{
     .brownBg{
         background-color: #f7fafc;
     }
-    .mobile-personal-icon{
+    .mobilePersonalIcon{
         background-image: linear-gradient(45deg,#5dcd5d 0%,#0f6093 100%);
     }
-    .mobile-online-icon{
+    .mobileOnlineIcon{
         background-image: linear-gradient(45deg,#FBDA61 0%,#FF5ACD 100%);
     }
-    .mobile-company-icon{
+    .mobileCompanyIcon{
         background-image: linear-gradient(45deg,#FF3CAC 0%,#784BA0 50%,#2B86C5 100%);
     }
     .pressContainer {
-        height: 75vh;
+        height: auto;
       }
       .carousel ul {
-        height: 75vh;
+        height: 250px;
+      }
+      .carousel img{
+        height: 200px;
+      }
+      .pressContainer{
+        box-sizing: content-box;
       }
 
 }
